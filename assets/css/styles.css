@@ -305,6 +305,18 @@ section[id] {
   color: var(--muted);
 }
 
+.csr-intro-block {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+  padding: 1.2rem 1.35rem;
+  border: 1px solid rgba(30, 143, 76, 0.18);
+  border-left: 5px solid var(--secondary);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ffffff, rgba(233, 246, 238, 0.75));
+  box-shadow: 0 16px 34px rgba(10, 47, 79, 0.08);
+}
+
 .trust-badges {
   display: flex;
   flex-wrap: wrap;
@@ -932,16 +944,13 @@ footer a:focus {
 }
 
 .partner-card-image {
-  width: 86px;
-  height: 74px;
+  width: 128px;
+  height: 78px;
   margin: 0 auto 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 18px;
-  background: rgba(30, 143, 76, 0.1);
-  color: var(--secondary);
-  font-size: 1.65rem;
+  background: transparent;
 }
 
 .partner-card-image img {
@@ -1169,6 +1178,27 @@ footer a:focus {
 }
 
 @media (max-width: 767.98px) {
+  #about.hero {
+    min-height: auto;
+    padding: 7.25rem 0 3.75rem;
+    align-items: flex-start;
+  }
+
+  #about .hero-copy {
+    padding-top: 0.35rem;
+  }
+
+  #about .hero-copy .lead {
+    font-size: 1rem;
+    line-height: 1.72;
+    margin-bottom: 1.75rem !important;
+  }
+
+  .text-justify-interword {
+    text-align: left;
+    text-justify: auto;
+  }
+
   .philosophy-card {
     padding: 1.5rem;
   }
@@ -1212,5 +1242,334 @@ footer a:focus {
 
   .footer-copyright {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar .container {
+    padding-inline: 1rem;
+  }
+
+  .navbar-collapse {
+    margin-top: 0.75rem;
+    padding: 0.85rem 0 0.35rem;
+    border-top: 1px solid #e9eef2;
+  }
+
+  .navbar-nav {
+    align-items: center;
+    gap: 0.2rem;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 0.58rem 1rem;
+    border-radius: 999px;
+  }
+
+  .hero {
+    min-height: auto !important;
+    padding: 7.5rem 0 4.5rem;
+    text-align: center;
+  }
+
+  .hero .row {
+    justify-content: center;
+  }
+
+  .hero-copy,
+  .thematic-heading {
+    margin-inline: auto;
+  }
+
+  .hero-visual-wrap {
+    justify-content: center;
+    margin-top: 1.75rem;
+  }
+
+  .hero-copy .d-flex {
+    justify-content: center;
+  }
+
+  .section-padding {
+    padding: 4rem 0;
+  }
+
+  .section-title,
+  .section-subtitle,
+  .thematic-heading,
+  .reach-info-card,
+  .core-value-card,
+  .governing-card {
+    text-align: center;
+  }
+
+  .section-subtitle {
+    margin-inline: auto;
+  }
+
+  .trust-badges {
+    justify-content: center;
+  }
+
+  .feature-card,
+  .program-card,
+  .stat-card,
+  .contact-card,
+  .info-card,
+  .partnership-card,
+  .thematic-card,
+  .about-panel {
+    text-align: center;
+  }
+
+  .icon-wrap,
+  .about-panel-icon,
+  .core-value-icon,
+  .person-icon,
+  .thematic-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .vision-point,
+  .mission-point {
+    text-align: left;
+  }
+
+  .info-card ul,
+  .partnership-card ul,
+  .thematic-card ul,
+  .contact-card form,
+  .contact-form-wrap {
+    text-align: left;
+  }
+
+  .partner-inquiry-card .section-title,
+  .partner-inquiry-card .text-muted-custom {
+    text-align: center;
+  }
+
+  .partner-inquiry-card .thematic-kicker {
+    margin-inline: auto;
+  }
+
+  footer .row > [class*="col-"] {
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-badges,
+  .footer-bottom,
+  .footer-copyright,
+  .footer-meta-links {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    padding-inline: 1.1rem;
+  }
+
+  .brand-logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .navbar-brand {
+    gap: 0.65rem;
+    max-width: calc(100% - 58px);
+  }
+
+  .brand-text {
+    font-size: 1.16rem;
+  }
+
+  .navbar-toggler {
+    padding: 0.35rem 0.55rem;
+  }
+
+  .hero,
+  #about.hero {
+    padding: 7rem 0 3.75rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.75rem, 8vw, 2.35rem);
+  }
+
+  .hero .lead {
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  #about .hero-copy .lead,
+  .text-justify-interword,
+  .philosophy-story {
+    text-align: left;
+    text-justify: auto;
+  }
+
+  .hero-media-card {
+    width: min(100%, 360px);
+    margin-inline: auto;
+    border-radius: 22px;
+  }
+
+  .hero-carousel .carousel-inner {
+    border-radius: 18px;
+  }
+
+  .hero-carousel .carousel-control-prev,
+  .hero-carousel .carousel-control-next {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-carousel .carousel-control-prev {
+    left: 0.65rem;
+  }
+
+  .hero-carousel .carousel-control-next {
+    right: 0.65rem;
+  }
+
+  .section-padding {
+    padding: 3.35rem 0;
+  }
+
+  .section-title {
+    margin-bottom: 0.65rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.98rem;
+  }
+
+  .btn-lg,
+  .hero .btn,
+  .contact-card form .btn,
+  .partner-inquiry-card form .btn {
+    width: 100%;
+  }
+
+  .feature-card.p-4,
+  .program-card.p-4,
+  .stat-card.p-4,
+  .contact-card.p-4,
+  .info-card.p-4,
+  .partnership-card.p-4,
+  .partner-inquiry-card.p-4,
+  .about-panel {
+    padding: 1.35rem !important;
+  }
+
+  .stat-value {
+    font-size: 1.65rem;
+  }
+
+  .gallery-item {
+    padding: 0.34rem;
+    border-radius: 18px;
+  }
+
+  .gallery-item img {
+    border-radius: 13px;
+  }
+
+  .partner-card {
+    flex-basis: 210px;
+    min-width: 210px;
+    padding: 1.2rem;
+  }
+
+  .partner-card-image {
+    width: 112px;
+    height: 70px;
+  }
+
+  .partner-marquee {
+    padding: 0.9rem;
+  }
+
+  .vision-point,
+  .mission-point {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .thematic-card h3,
+  .thematic-card .thematic-icon {
+    text-align: center;
+  }
+
+  .thematic-card ul,
+  .partnership-card ul,
+  .info-card ul {
+    text-align: left;
+  }
+
+  .scanner-card img {
+    max-width: min(100%, 240px) !important;
+  }
+
+  .contact-details-list,
+  .donation-details-card,
+  footer {
+    overflow-wrap: anywhere;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding-inline: 0.9rem;
+  }
+
+  .brand-logo {
+    width: 46px;
+    height: 46px;
+  }
+
+  .brand-text {
+    font-size: 1rem;
+  }
+
+  .hero,
+  #about.hero {
+    padding-top: 6.6rem;
+  }
+
+  .trust-badge {
+    font-size: 0.82rem;
+    padding: 0.48rem 0.68rem;
+  }
+
+  .hero-media-card {
+    width: 100%;
   }
 }

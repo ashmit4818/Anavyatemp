@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -74,7 +74,7 @@
             </article>
 
             <article class="info-card p-3 text-center scanner-card mt-4">
-              <h2 class="h5 mb-3">Scan to Donate</h3>
+              <h2 class="h5 mb-3">Scan to Donate</h2>
               <img
                 src="assets/images/scanner.png"
                 alt="Donation scanner code for Anavya Foundation"
@@ -85,7 +85,7 @@
             </article>
 
             <article class="info-card p-3 donation-details-card mt-4">
-              <h2 class="h5 mb-2">Direct Donation Details</h3>
+              <h2 class="h5 mb-2">Direct Donation Details</h2>
               <p class="mb-1 text-muted-custom"><strong>Bank:</strong> ICICI Bank</p>
               <p class="mb-1 text-muted-custom"><strong>Account Number:</strong> 000301078499</p>
               <p class="mb-1 text-muted-custom"><strong>Account Holder's Name:</strong> ANAVYA FOUNDATION</p>
@@ -102,40 +102,40 @@
 
           <div class="col-lg-7" id="donation-contact">
             <article class="contact-card p-4">
-              <h2 class="h5">Donation Details</h3>
+              <h2 class="h5">Donation Details</h2>
               <p class="text-muted-custom">Please share your donation details and our team will follow up to complete the process.</p>
-              <form>
+              <form action="https://formspree.io/f/xdabkpqb" method="post">
                 <div class="row g-3 mt-2">
                   <div class="col-md-6">
                     <label class="form-label" for="donor-name">Full Name</label>
-                    <input class="form-control" id="donor-name" type="text" placeholder="Your name">
+                    <input class="form-control" id="donor-name" name="donor_name" type="text" placeholder="Your name">
                   </div>
                   <div class="col-md-6">
                     <label class="form-label" for="donor-email">Email</label>
-                    <input class="form-control" id="donor-email" type="email" placeholder="you@example.com">
+                    <input class="form-control" id="donor-email" name="donor_email" type="email" placeholder="you@example.com">
                   </div>
                   <div class="col-md-6">
                     <label class="form-label" for="donor-phone">Phone</label>
-                    <input class="form-control" id="donor-phone" type="tel" placeholder="+91">
+                    <input class="form-control" id="donor-phone" name="donor_phone" type="tel" placeholder="+91">
                   </div>
                   <div class="col-md-6">
                     <label class="form-label" for="donor-message">Message</label>
-                    <textarea class="form-control" id="donor-message" rows="1" placeholder="Your message"></textarea>
+                    <textarea class="form-control" id="donor-message" name="donor_message" rows="1" placeholder="Your message"></textarea>
                   </div>
                   <div class="col-12">
                     <label class="form-label" for="donor-address">Address</label>
-                    <textarea class="form-control" id="donor-address" rows="2" placeholder="Your address"></textarea>
+                    <textarea class="form-control" id="donor-address" name="donor_address" rows="2" placeholder="Your address"></textarea>
                   </div>
                   <div class="col-md-6">
                     <label class="form-label" for="donor-pan">PAN Card Number</label>
-                    <input class="form-control" id="donor-pan" type="text" placeholder="PAN number">
+                    <input class="form-control" id="donor-pan" name="donor_pan" type="text" placeholder="PAN number">
                   </div>
                   <div class="col-md-6">
                     <label class="form-label" for="donor-aadhaar">Aadhaar Number</label>
-                    <input class="form-control" id="donor-aadhaar" type="text" placeholder="Aadhaar number">
+                    <input class="form-control" id="donor-aadhaar" name="donor_aadhaar" type="text" placeholder="Aadhaar number">
                   </div>
                   <div class="col-12">
-                    <button type="button" class="btn btn-secondary-custom">Submit Donation Info</button>
+                    <button type="submit" class="btn btn-secondary-custom">Submit Donation Info</button>
                   </div>
                 </div>
               </form>
@@ -154,8 +154,8 @@
             <img src="assets/images/logo.jpeg" alt="Anavya Foundation logo">
             <h2 class="h5 text-white mb-0">Anavya Foundation</h2>
           </div>
-          <p class="mb-0">A Section 8 company, 12A and 80G certified, with CSR Registration No. CSR00066840.</p>
           <div class="trust-badges footer-badges mt-3">
+            <span class="trust-badge"><i class="bi bi-bank2"></i>Section 8</span>
             <span class="trust-badge"><i class="bi bi-patch-check-fill"></i>12A</span>
             <span class="trust-badge"><i class="bi bi-shield-check"></i>80G</span>
             <span class="trust-badge"><i class="bi bi-building-check"></i>CSR00066840</span>
@@ -166,6 +166,7 @@
           <p class="mb-1"><a href="index.html#about">About</a></p>
           <p class="mb-1"><a href="gallery.html#gallery">Gallery</a></p>
           <p class="mb-1"><a href="our-work.html#programs">Programs</a></p>
+          <p class="mb-1"><a href="contact.html#contact">Contact</a></p>
         </div>
         <div class="col-lg-4">
           <h3 class="h6 text-white">Contact</h3>
@@ -175,13 +176,11 @@
       </div>
       <div class="footer-bottom mt-4">
         <div class="footer-copyright">
-          <span class="footer-year-badge">© 2026</span>
+          <span class="footer-year-badge">&copy; 2026</span>
           <span><strong>Anavya Foundation</strong> All rights reserved.</span>
         </div>
         <div class="footer-meta-links">
           <a href="privacy-policy.html">Privacy Policy</a>
-          <span class="footer-link-separator" aria-hidden="true">•</span>
-          <a href="disclaimer.html">Disclaimer</a>
         </div>
       </div>
     </div>

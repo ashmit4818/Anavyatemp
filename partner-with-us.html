@@ -131,26 +131,26 @@
             </div>
             <div class="col-lg-8">
               <div class="contact-form-wrap">
-                <form>
+                <form action="https://formspree.io/f/xrejbona" method="post">
                   <div class="row g-3">
                     <div class="col-md-6">
                       <label class="form-label" for="partner-name">Full Name</label>
-                      <input class="form-control" id="partner-name" type="text" placeholder="Your name">
+                      <input class="form-control" id="partner-name" name="partner_name" type="text" placeholder="Your name">
                     </div>
                     <div class="col-md-6">
                       <label class="form-label" for="partner-email">Email</label>
-                      <input class="form-control" id="partner-email" type="email" placeholder="you@example.com">
+                      <input class="form-control" id="partner-email" name="partner_email" type="email" placeholder="you@example.com">
                     </div>
                     <div class="col-md-6">
                       <label class="form-label" for="partner-phone">Phone</label>
-                      <input class="form-control" id="partner-phone" type="tel" placeholder="+91">
+                      <input class="form-control" id="partner-phone" name="partner_phone" type="tel" placeholder="+91">
                     </div>
                     <div class="col-12">
                       <label class="form-label" for="partner-message">Message</label>
-                      <textarea class="form-control" id="partner-message" rows="4" placeholder="Tell us how you would like to contribute"></textarea>
+                      <textarea class="form-control" id="partner-message" name="partner_message" rows="4" placeholder="Tell us how you would like to contribute"></textarea>
                     </div>
                     <div class="col-12">
-                      <button type="button" class="btn btn-primary-custom">Submit Inquiry</button>
+                      <button type="submit" class="btn btn-primary-custom">Submit Inquiry</button>
                     </div>
                   </div>
                 </form>
@@ -170,8 +170,8 @@
             <img src="assets/images/logo.jpeg" alt="Anavya Foundation logo">
             <h2 class="h5 text-white mb-0">Anavya Foundation</h2>
           </div>
-          <p class="mb-0">A Section 8 company, 12A and 80G certified, with CSR Registration No. CSR00066840.</p>
           <div class="trust-badges footer-badges mt-3">
+            <span class="trust-badge"><i class="bi bi-bank2"></i>Section 8</span>
             <span class="trust-badge"><i class="bi bi-patch-check-fill"></i>12A</span>
             <span class="trust-badge"><i class="bi bi-shield-check"></i>80G</span>
             <span class="trust-badge"><i class="bi bi-building-check"></i>CSR00066840</span>
@@ -182,6 +182,7 @@
           <p class="mb-1"><a href="index.html#about">About</a></p>
           <p class="mb-1"><a href="gallery.html#gallery">Gallery</a></p>
           <p class="mb-1"><a href="our-work.html#programs">Programs</a></p>
+          <p class="mb-1"><a href="contact.html#contact">Contact</a></p>
         </div>
         <div class="col-lg-4">
           <h3 class="h6 text-white">Contact</h3>
@@ -196,8 +197,6 @@
         </div>
         <div class="footer-meta-links">
           <a href="privacy-policy.html">Privacy Policy</a>
-          <span class="footer-link-separator" aria-hidden="true">&middot;</span>
-          <a href="disclaimer.html">Disclaimer</a>
         </div>
       </div>
     </div>
